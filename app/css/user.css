@@ -1,0 +1,41 @@
+/*消息中心*/
+#information #informationHead > a {
+  position: relative; }
+  #information #informationHead > a .radios {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    background: red;
+    color: #fff;
+    border-radius: 50%; }
+
+#information #informationModal .carousel-control {
+  background: none; }
+  #information #informationModal .carousel-control > span {
+    position: relative;
+    display: block;
+    height: 100%; }
+    #information #informationModal .carousel-control > span > b {
+      position: absolute;
+      height: 100px;
+      line-height: 100px;
+      font-size: 50px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+.btn-default{
+	background: none;
+	color: #fff;
+}
+.btn-default:hover{
+	background:none;
+}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+	background: none !important;
+	color: #fff !important;
+	border: none !important;
+}

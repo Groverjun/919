@@ -1,0 +1,203 @@
+@charset "utf-8";
+body{
+    background: url(../img/bg.jpg) no-repeat;
+    overflow-x: hidden;
+    background-attachment:fixed;
+    
+}
+#header{   
+    .navbar-default{
+        background:  -webkit-linear-gradient(top,#0c2f6a,#11346e);
+        color: #fff;
+    }
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus, 
+    .navbar-default .navbar-nav>.active>a:hover{
+         background: none;
+         color: #fff;
+     }
+    .navbar-default .navbar-nav>li>a{
+        color: #fff;
+     }
+    .navbar-brand{
+         padding: 4px 15px;
+    }
+    .navbar-default{border: none;}     
+    .navRight{
+         float: right !important;
+     }
+     .navbar-nav{float: none;}
+     .navbar-toggle{
+         background: transparent;
+         border: none;
+     }
+     .hidd{display: none;}
+     .sho{display: block;}
+     @media (max-width: 767px) {
+       .navRight {float: none !important; }         
+       .hidd{display: block;}  
+       .sho{display: none;}               
+    }    
+}
+#main{
+    margin-top: 60px;
+    .shuju_Mleft{
+        width: 25%;
+        .list-group-item{
+            height: 50px;
+            line-height: 30px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #4969a7;
+            color: #fff; font-size: 16px;
+           >i{
+               font-size: 20px;
+               margin-right: 5px;
+           }
+           >em{
+               float: right;
+               font-style: normal;
+               font-size: 20px;
+           }
+           .janAct{
+              transform: rotate(90deg);
+           }
+        }
+        .act{
+            background: #1b4387 !important;
+        }
+    }
+    .shuju_Mright{
+        width: 75%;
+        @media (min-width: 1200px) {
+        .col-lg-3{
+            width: 20%;
+        }       
+    }
+    .topTable {
+        padding: 10px;
+        color: #fff;
+        background: rgba(50,84,150,0.3);
+        margin-bottom: 26px;
+        .tableTop_li {}
+        >h6 {
+            font-weight: bold;
+        }
+        .list-group-item {
+            border: none;
+            background: none;
+        }
+        .topTable_p {
+            border-bottom: 2px solid #66CCFF;
+            >p {
+                margin-bottom: 3px;
+                font-weight: bold;
+            }
+        }
+        .list-group-item {
+            margin-top: 5px;
+            width: 30%;
+        }
+        .list-group-item:nth-child(1) {
+            border-right: 1px solid #66CCFF;
+        }
+    }
+    .seekAbt{
+        .btn-group-vertical>.btn, .btn-group>.btn{
+            background: #4e5699;
+            color: #fff;
+            border: none;
+            margin: 0 1px;
+            position: relative;
+            .seekAct{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 9px solid transparent;
+                border-right-color: #00fffc;
+                transform: rotate(-223deg);
+                top: -9px;
+                right: -9px;
+            }
+        }
+    }  
+   .seekTable {
+       .table {
+           width: 80%;
+           border: none;
+           color: #fff;
+           margin-top: 20px;
+       }
+       .file {
+           background: #4c63a1;
+       }
+       td {
+       }
+       .table-bordered>tbody>tr>td {
+           border: 1px solid #6a7ab1;
+       }
+       .table-hover>tbody>tr:hover{
+           background:  #4c63a1;
+           cursor: pointer;          
+       }
+   } 
+   .SEO {
+       .seoOne {
+           widows: 100%;
+           height: 181px;
+           background: #F0AD4E;
+           color: #fff;
+           box-sizing: border-box;
+           padding: 10px;
+           >div {
+               margin-top: 40px
+           }
+       }
+       .table-bordered{
+           border-color: #817fac;
+           color: #fff;
+       }
+       .list-group {
+           margin-bottom: 5px;
+       }
+       .list-inline{
+           color: #fff;
+           background: #5a497d;
+           >li{
+               h2{
+                   font-size: 28px;
+                   color: #4afffa;
+               }
+           }
+           >li:nth-child(1){
+               margin-right: 65px;
+           }
+       }
+       .list-group-item {
+           border: none;
+           background: none;
+           padding: 0;
+       }
+   }  
+  
+  
+  
+  }
+}
+@media (max-width: 767px) {
+      .shuju_Mleft{
+       display: none;
+      }
+      .shuju_Mright{
+        width: 100% !important;
+        float: none !important;        
+        .seekAbt{
+            
+        }
+        .seekTable {
+               .table {
+                    width: 100% !important;
+                }            
+            }
+    }     
+} 
